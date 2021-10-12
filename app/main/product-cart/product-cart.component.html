@@ -1,0 +1,15 @@
+<div *ngIf="cartItems.length === 0" class="alert alert-info">
+  No Item Added to Cart.
+</div>
+<form (ngSubmit)="onSubmit()" >
+<ul *ngIf="cartItems.length > 0"  class="list-group">
+  <li class="list-group-item" *ngFor="let item of cartItems">
+    <app-product-item [cartItem]="item"></app-product-item>
+  </li>
+
+  <li class="list-group-item active">
+    <strong>Total</strong> {{ cartTotal | currency: 'R'}}
+  </li>
+  <button class="btn btn-success">Check Out</button>
+</ul>
+</form>

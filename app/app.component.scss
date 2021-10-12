@@ -1,0 +1,33 @@
+.wrapper {
+  height: 100vh;
+  width: auto;
+  border: 5px solid transparent;
+  background: #27aae2 top left repeat-x;
+}
+
+main {
+  padding-top: 1rem;
+
+  .signin-form {
+    background: red;
+    border: 5px solid pink;
+    max-width: 300px;
+    padding: 15px;
+    margin: 200px auto;
+    border: 1px solid #428bca;
+    background: #d4e4ef;
+    background: -webkit-linear-gradient(top, #d4e4ef 0%,#86aecc 100%);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+
+    .pull-left {
+      float: left;
+    }
+
+    .pull-right {
+      position: relative;
+      right: 12;
+    }
+  }
+}
